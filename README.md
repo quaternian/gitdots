@@ -8,6 +8,6 @@ So far:
 	git init --bare $HOME/.gitdots
 	alias gitdots='/usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME'
 	gitdots config --local status.showUntrackedFiles no
-	gitdots remote add origin https://github.com/quaternian/gitdots.git
+	gitdots remote add origin https://github.com/USERNAME/gitdots.git
 	
 	
