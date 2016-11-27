@@ -1,6 +1,6 @@
 ## This should get everything up and running..
 
-git clone --bare https://github.com/quaternian/gitdots.git $HOME/.cfg
+git clone --bare https://github.com/quaternian/gitdots.git $HOME/.gitdots
 function gitdots {
    /usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME $@
 }

@@ -10,8 +10,7 @@ So far:
 	$ gitdots config --local status.showUntrackedFiles no
 	$ gitdots remote add origin https://github.com/USERNAME/gitdots.git
 	
-To Clone:
+What actually worked:	
 
-	$ echo '.gitdots' > '.gitignore'
-	$ git clone --bare <this git URL> $HOME/.gitdots
-	$ alias gitdots='/usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME'
+	# apt-get install git curl
+	$ curl -Lks https://raw.githubusercontent.com/quaternian/gitdots/master/install.sh | /bin/bash 
