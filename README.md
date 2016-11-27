@@ -1,7 +1,7 @@
 # gitdots
 manage ~/.dotfiles with git
 
-Based on some stuff by (StreakyCobra)[https://news.ycombinator.com/item?id=11071754] and  (Nicola Paolucci)[https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/]
+Based on some stuff by [StreakyCobra](https://news.ycombinator.com/item?id=11071754) and  [Nicola Paolucci](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
 
 So far:
 
