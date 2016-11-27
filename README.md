@@ -5,9 +5,13 @@ Based on some stuff by [StreakyCobra](https://news.ycombinator.com/item?id=11071
 
 So far:
 
-	git init --bare $HOME/.gitdots
-	alias gitdots='/usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME'
-	gitdots config --local status.showUntrackedFiles no
-	gitdots remote add origin https://github.com/USERNAME/gitdots.git
+	$ git init --bare $HOME/.gitdots
+	$ alias gitdots='/usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME'
+	$ gitdots config --local status.showUntrackedFiles no
+	$ gitdots remote add origin https://github.com/USERNAME/gitdots.git
 	
-	
+To Clone:
+
+	$ echo '.gitdots' > '.gitignore'
+	$ git clone --bare <this git URL> $HOME/.gitdots
+	$ alias gitdots='/usr/bin/git --git-dir=$HOME/.gitdots/ --work-tree=$HOME'
