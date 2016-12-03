@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -f "~/.githome" ] ; then
+	echo "please run githome install first" ;
+	else
+	if [ $1 = 'install' ] ; then
+		echo "performing initial setup." ;
+		mkdir $HOME/.githome
+		
+		#otherwise just run with the .githome shell
+		else /usr/bin/git --git-dir=$HOME/.githome/ --work-tree=$HOME $@
+	fi;
+fi
