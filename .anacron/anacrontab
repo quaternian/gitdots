@@ -1,0 +1,18 @@
+# copied from /etc/anacrontab: configuration file for anacron
+# See anacron(8) and anacrontab(5) for details.
+
+# gotta add something like this with 'crontab -e'
+#    01 * * * * /usr/sbin/anacron -t ${HOME}/.anacron/anacrontab -S ${HOME}/.anacron/spool
+
+
+
+
+
+SHELL=/bin/sh
+PATH=${HOME}/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+LOGNAME=${USER}
+
+# These replace cron's entries
+1	5	cron.daily	run-parts --report ${HOME}/.anacron/cron.daily
+7	10	cron.weekly	run-parts --report ${HOME}/.anacron/cron.weekly
+@monthly	15	cron.monthly	run-parts --report ${HOME}/.anacron/cron.monthly
