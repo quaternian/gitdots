@@ -1,0 +1,11 @@
+# usefull aliases, to be pulled in with .bashrc
+
+
+alias ll='ls -l'
+alias lla='ls -lA'
+alias la='ls -A'
+alias l='ls -CF'
+
+#alias ~='cd ~'
+#alias ..='cd ..'
+
