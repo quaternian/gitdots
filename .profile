@@ -20,3 +20,8 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# set some useful aliases
+if [ -f "$HOME/.aliases" ]; then
+    . $HOME/.aliases
+fi
